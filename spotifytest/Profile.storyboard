@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Muli-Light.ttf">
+            <string>Muli-Light</string>
+        </mutableArray>
+        <mutableArray key="Muli-Regular.ttf">
+            <string>Muli</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--ProfileVC-->
+        <scene sceneID="9Km-Yr-Scz">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="3yC-dq-H15" customClass="ProfileVC" customModule="spotifytest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAc-Go-8Z4"/>
+                        <viewControllerLayoutGuide type="bottom" id="beJ-0w-JMK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tbA-I7-G5J">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aQ-7z-xOG">
+                                <rect key="frame" x="40" y="227" width="520" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mxY-S7-X1O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Light" family="Muli" pointSize="18"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.14117647059999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-Gb-xBf">
+                                <rect key="frame" x="225" y="60" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="74X-cv-TI7"/>
+                                    <constraint firstAttribute="height" constant="150" id="uog-Gc-8ah"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVx-FW-kM5" customClass="CustomButton" customModule="spotifytest" customModuleProvider="target">
+                                <rect key="frame" x="40" y="417" width="520" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DrB-Jl-HhX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="16"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" red="0.98339342949999997" green="0.98339342949999997" blue="0.98339342949999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" red="0.98339342949999997" green="0.98339342949999997" blue="0.98339342949999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backColor">
+                                        <color key="value" red="0.039215686270000001" green="0.74901960779999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="3yC-dq-H15" eventType="touchUpInside" id="nsf-ly-d6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1aQ-7z-xOG" secondAttribute="trailing" constant="20" id="8aa-sy-YOv"/>
+                            <constraint firstItem="1aQ-7z-xOG" firstAttribute="top" secondItem="YZd-Gb-xBf" secondAttribute="bottom" constant="17" id="Dye-d5-N5Q"/>
+                            <constraint firstItem="1aQ-7z-xOG" firstAttribute="leading" secondItem="tbA-I7-G5J" secondAttribute="leadingMargin" constant="20" id="EpA-Q3-N6G"/>
+                            <constraint firstItem="YZd-Gb-xBf" firstAttribute="top" secondItem="eAc-Go-8Z4" secondAttribute="bottom" constant="60" id="IdE-0r-lkn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PVx-FW-kM5" secondAttribute="trailing" constant="20" id="RF9-Ra-Q4x"/>
+                            <constraint firstItem="beJ-0w-JMK" firstAttribute="top" secondItem="PVx-FW-kM5" secondAttribute="bottom" constant="20" id="ZzD-OG-AWa"/>
+                            <constraint firstItem="YZd-Gb-xBf" firstAttribute="centerX" secondItem="tbA-I7-G5J" secondAttribute="centerX" id="eSN-je-PdC"/>
+                            <constraint firstItem="PVx-FW-kM5" firstAttribute="leading" secondItem="tbA-I7-G5J" secondAttribute="leadingMargin" constant="20" id="qGW-IV-2xU"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="AhR-mJ-4VA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="YZd-Gb-xBf" id="AKy-Pc-94k"/>
+                        <outlet property="lblName" destination="1aQ-7z-xOG" id="6el-bB-LDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4TB-pe-j13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="1020"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u7X-RX-uAG">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-FvX-y4-4wT" automaticallyAdjustsScrollViewInsets="NO" id="FvX-y4-4wT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="profile-icon" id="Rxe-cI-9lJ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3Na-av-tGw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3yC-dq-H15" kind="relationship" relationship="rootViewController" id="WhB-Tx-2KI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gd-4k-iH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="1020"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile-icon" width="26" height="26"/>
+    </resources>
+</document>
