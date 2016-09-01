@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,6 +7,9 @@
     <customFonts key="customFonts">
         <mutableArray key="Muli-Light.ttf">
             <string>Muli-Light</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -22,20 +25,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="4kh-eh-D1e">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-ag-kAI">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-Td-ibn">
+                                <rect key="frame" x="212" y="200" width="176" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="songq" translatesAutoresizingMaskIntoConstraints="NO" id="8v1-eO-Mbl">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <color key="tintColor" red="0.039215686270000001" green="0.74901960779999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YfY-ag-kAI">
+                                        <rect key="frame" x="13" y="0.0" width="150" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="songq" translatesAutoresizingMaskIntoConstraints="NO" id="8v1-eO-Mbl">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <color key="tintColor" red="0.039215686270000001" green="0.74901960779999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="aOk-L2-eJk"/>
+                                                    <constraint firstAttribute="height" constant="150" id="chZ-vp-bCK"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SONGQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-JT-f5h">
+                                        <rect key="frame" x="0.0" y="150" width="176" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="aOk-L2-eJk"/>
-                                            <constraint firstAttribute="height" constant="150" id="chZ-vp-bCK"/>
+                                            <constraint firstAttribute="height" constant="50" id="oaw-91-brY"/>
+                                            <constraint firstAttribute="width" constant="200" id="q4b-3B-iD8"/>
                                         </constraints>
-                                    </imageView>
+                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="q4b-3B-iD8"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6G-RA-3bM" customClass="CustomButton" customModule="spotifytest" customModuleProvider="target">
@@ -64,25 +84,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.67843137249999996" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="YfY-ag-kAI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9p3-U1-lmm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4kh-eh-D1e" secondAttribute="bottom" id="AXS-9U-NAR"/>
-                            <constraint firstItem="YfY-ag-kAI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LJD-a9-O4C"/>
-                            <constraint firstItem="4kh-eh-D1e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dkt-Wk-oxY"/>
+                            <constraint firstItem="mlF-Td-ibn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wmc-kD-8mS"/>
+                            <constraint firstItem="mlF-Td-ibn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKv-mH-xWc"/>
                             <constraint firstItem="r6G-RA-3bM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hP7-sh-a2F"/>
-                            <constraint firstItem="YfY-ag-kAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htB-zD-bik"/>
-                            <constraint firstAttribute="trailing" secondItem="4kh-eh-D1e" secondAttribute="trailing" id="rMe-3C-3jU"/>
-                            <constraint firstItem="4kh-eh-D1e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sTj-hU-WgQ"/>
-                            <constraint firstItem="YfY-ag-kAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUZ-4c-W94"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r6G-RA-3bM" secondAttribute="bottom" constant="25" id="soF-Vh-uLK"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="9p3-U1-lmm"/>
-                                <exclude reference="sUZ-4c-W94"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -143,7 +151,6 @@
     <resources>
         <image name="discover-icon" width="25" height="25"/>
         <image name="favs-icon" width="24" height="24"/>
-        <image name="gradient" width="3600" height="3600"/>
         <image name="profile-icon" width="26" height="26"/>
         <image name="songq" width="341" height="300"/>
     </resources>

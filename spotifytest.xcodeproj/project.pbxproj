@@ -41,6 +41,7 @@
 		3FB981751D271CA000BC73BD /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981711D271CA000BC73BD /* Artist.swift */; };
 		3FB981761D271CA000BC73BD /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981721D271CA000BC73BD /* Track+CoreDataProperties.swift */; };
 		3FB981771D271CA000BC73BD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981731D271CA000BC73BD /* Track.swift */; };
+		AC9DF9AC1D77E12000A7C43F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		3FB981731D271CA000BC73BD /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		414E3D8E01979E3D59D18F51 /* Pods-spotifytest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifytest.release.xcconfig"; path = "Pods/Target Support Files/Pods-spotifytest/Pods-spotifytest.release.xcconfig"; sourceTree = "<group>"; };
 		7ED25FA3004DFAF50E472247 /* Pods_spotifytest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotifytest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		3F5E887D1D25810A00DCFE96 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */,
 				3F5E887E1D25811400DCFE96 /* Muli-Light.ttf */,
 				3F5E88801D25811B00DCFE96 /* Muli-Regular.ttf */,
 			);
@@ -361,6 +364,7 @@
 					};
 					3F5D46E81D1AE61700BF694A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = TZRX6AQ237;
 					};
 					3F7723D81D34157E00536132 = {
 						CreatedOnToolsVersion = 7.3;
@@ -408,6 +412,7 @@
 				3F6261601D2422B1003F8F5A /* Favs.storyboard in Resources */,
 				3F1BFDAF1D232B7B001FAC07 /* Main.storyboard in Resources */,
 				3F5E887F1D25811400DCFE96 /* Muli-Light.ttf in Resources */,
+				AC9DF9AC1D77E12000A7C43F /* OpenSans-Light.ttf in Resources */,
 				3F62616D1D2441E3003F8F5A /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,6 +658,8 @@
 			baseConfigurationReference = 09CCED9152598CD9186397B7 /* Pods-spotifytest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -663,6 +670,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amgm.spotifytest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "spotifytest/spotifytest-Bridging-Header.h";
 			};
 			name = Debug;
@@ -672,6 +680,8 @@
 			baseConfigurationReference = 414E3D8E01979E3D59D18F51 /* Pods-spotifytest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,6 +692,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amgm.spotifytest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "spotifytest/spotifytest-Bridging-Header.h";
 			};
 			name = Release;
@@ -718,6 +729,7 @@
 				3F0155B21D495B7200EF3723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5D46E41D1AE61700BF694A /* Build configuration list for PBXProject "spotifytest" */ = {
 			isa = XCConfigurationList;

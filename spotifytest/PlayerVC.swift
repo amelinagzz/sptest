@@ -25,7 +25,7 @@ class PlayerVC: UIViewController {
     var newSet: Bool!
     let placeholderImage = UIImage(named: "placeholder")!
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-
+    var timer : NSTimer!
 
     @IBOutlet weak var lblSongName: UILabel!
     @IBOutlet weak var lblArtists: UILabel!
@@ -75,7 +75,10 @@ class PlayerVC: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         currentCard.alpha = 0
+        timer.invalidate()
+
     }
+    
     
     func getSongs(){
         
@@ -154,7 +157,10 @@ class PlayerVC: UIViewController {
         
         
         self.audioPlayer = AVPlayer(URL: sound!)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(PlayerVC.checkSong),userInfo: nil, repeats: true)
+
         self.audioPlayer.rate = 1.0
+        
         //self.audioPlayer.play()
         updateArt(track.albumImageUrl)
         lblSongName.text = track.title
@@ -163,6 +169,14 @@ class PlayerVC: UIViewController {
 
     }
     
+    func checkSong() {
+        if self.audioPlayer.isPlaying == false {
+            timer.invalidate()
+            showNextCard(false)
+        
+        }
+    }
+  
     func updateArt(image: String){
         let url = NSURL(string: image)!
         currentCard.shapeImage.af_setImageWithURL(url, placeholderImage: placeholderImage)
@@ -265,5 +279,13 @@ class PlayerVC: UIViewController {
             }
         }
 
+    }
+    
+    
+}
+extension AVPlayer {
+    
+    var isPlaying: Bool {
+        return ((rate != 0) && (error == nil))
     }
 }
