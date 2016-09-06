@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04AB357B0C407950CACB5783 /* Pods_spotifytest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED25FA3004DFAF50E472247 /* Pods_spotifytest.framework */; };
 		3F0155A11D494E6C00EF3723 /* spotifytest-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D47041D1AED8000BF694A /* spotifytest-Bridging-Header.h */; };
-		3F0155AC1D495B7200EF3723 /* SongQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0155AB1D495B7200EF3723 /* SongQTests.swift */; };
 		3F1BFDAB1D232ADE001FAC07 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFDAA1D232ADE001FAC07 /* CustomButton.swift */; };
 		3F1BFDAD1D232B5A001FAC07 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFDAC1D232B5A001FAC07 /* LoginVC.swift */; };
 		3F1BFDAF1D232B7B001FAC07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BFDAE1D232B7B001FAC07 /* Main.storyboard */; };
@@ -42,6 +41,7 @@
 		3FB981761D271CA000BC73BD /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981721D271CA000BC73BD /* Track+CoreDataProperties.swift */; };
 		3FB981771D271CA000BC73BD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981731D271CA000BC73BD /* Track.swift */; };
 		AC9DF9AC1D77E12000A7C43F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */; };
+		ACEC39B01D7E787A002D9EB7 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC39AF1D7E787A002D9EB7 /* ModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 /* Begin PBXFileReference section */
 		09CCED9152598CD9186397B7 /* Pods-spotifytest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifytest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spotifytest/Pods-spotifytest.debug.xcconfig"; sourceTree = "<group>"; };
 		3F0155A91D495B7200EF3723 /* SongQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F0155AB1D495B7200EF3723 /* SongQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongQTests.swift; sourceTree = "<group>"; };
 		3F0155AD1D495B7200EF3723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1BFDAA1D232ADE001FAC07 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		3F1BFDAC1D232B5A001FAC07 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		414E3D8E01979E3D59D18F51 /* Pods-spotifytest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifytest.release.xcconfig"; path = "Pods/Target Support Files/Pods-spotifytest/Pods-spotifytest.release.xcconfig"; sourceTree = "<group>"; };
 		7ED25FA3004DFAF50E472247 /* Pods_spotifytest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotifytest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		ACEC39AF1D7E787A002D9EB7 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +150,8 @@
 		3F0155AA1D495B7200EF3723 /* SongQTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F0155AB1D495B7200EF3723 /* SongQTests.swift */,
 				3F0155AD1D495B7200EF3723 /* Info.plist */,
+				ACEC39AF1D7E787A002D9EB7 /* ModelTests.swift */,
 			);
 			path = SongQTests;
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0155AC1D495B7200EF3723 /* SongQTests.swift in Sources */,
+				ACEC39B01D7E787A002D9EB7 /* ModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
