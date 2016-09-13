@@ -69,13 +69,21 @@ class PlayerVC: UIViewController {
         
     } 
     
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
+            currentCard.alpha = 0
+        } else {
+            currentCard.alpha = 1
+        }
+    }
+    
     override func viewWillAppear(animated: Bool) {
         newSet = true
     }
     
     override func viewWillDisappear(animated: Bool) {
         currentCard.alpha = 0
-        timer.invalidate()
+        //timer.invalidate()
 
     }
     
@@ -157,7 +165,7 @@ class PlayerVC: UIViewController {
         
         
         self.audioPlayer = AVPlayer(URL: sound!)
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(PlayerVC.checkSong),userInfo: nil, repeats: true)
+        //timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(PlayerVC.checkSong),userInfo: nil, repeats: true)
 
         self.audioPlayer.rate = 1.0
         

@@ -133,6 +133,15 @@ class PlayerFullVC: UIViewController, CZPickerViewDelegate, CZPickerViewDataSour
         let url = NSURL(string: image)!
         card.shapeImage.af_setImageWithURL(url, placeholderImage: placeholderImage)
     }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
+            card.alpha = 0
+        } else {
+            card.alpha = 1
+        }
+    }
+
 
     @IBAction func addToPlaylistPressed(sender: AnyObject) {
         let delay = 0.3 * Double(NSEC_PER_SEC)

@@ -71,6 +71,18 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## Firebase
+
+Copyright 2016 Google
+
+## FirebaseAnalytics
+
+Copyright 2016 Google
+
+## FirebaseInstanceID
+
+Copyright 2016 Google
+
 ## GTToast
 
 Copyright (c) 2015 gregttn <gregttn@gmail.com>
@@ -93,6 +105,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+## GoogleInterchangeUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleSymbolUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleUtilities
+
+Copyright 2015 Google Inc.
 
 ## SWTableViewCell
 

@@ -43,6 +43,14 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func loginPressed(sender: AnyObject) {
+        
+        let localNotification = UILocalNotification()
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        localNotification.alertBody = "Welcome to SongQ"
+        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
         let delay = 0.4 * Double(NSEC_PER_SEC)
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(time, dispatch_get_main_queue()) {

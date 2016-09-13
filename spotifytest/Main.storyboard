@@ -57,6 +57,9 @@
                                         </variation>
                                     </label>
                                 </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="212" y="100" width="176" height="200"/>
+                                </variation>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6G-RA-3bM" customClass="CustomButton" customModule="spotifytest" customModuleProvider="target">
                                 <rect key="frame" x="175" y="525" width="250" height="50"/>
@@ -90,7 +93,19 @@
                             <constraint firstItem="mlF-Td-ibn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKv-mH-xWc"/>
                             <constraint firstItem="r6G-RA-3bM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hP7-sh-a2F"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r6G-RA-3bM" secondAttribute="bottom" constant="25" id="soF-Vh-uLK"/>
+                            <constraint firstItem="mlF-Td-ibn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="yqJ-vn-e13"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yqJ-vn-e13"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Wmc-kD-8mS"/>
+                                <include reference="yqJ-vn-e13"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

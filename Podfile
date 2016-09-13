@@ -10,5 +10,6 @@ pod 'AlamofireImage', '~> 2.0'
 pod 'SWTableViewCell', '~> 0.3.7'
 pod "CZPicker"
 pod 'GTToast'
+pod 'Firebase'
 end
 

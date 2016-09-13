@@ -41,6 +41,7 @@
 		3FB981761D271CA000BC73BD /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981721D271CA000BC73BD /* Track+CoreDataProperties.swift */; };
 		3FB981771D271CA000BC73BD /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB981731D271CA000BC73BD /* Track.swift */; };
 		AC9DF9AC1D77E12000A7C43F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */; };
+		ACB69A9A1D826DA100F9D575 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB69A991D826DA100F9D575 /* GoogleService-Info.plist */; };
 		ACEC39B01D7E787A002D9EB7 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC39AF1D7E787A002D9EB7 /* ModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		414E3D8E01979E3D59D18F51 /* Pods-spotifytest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifytest.release.xcconfig"; path = "Pods/Target Support Files/Pods-spotifytest/Pods-spotifytest.release.xcconfig"; sourceTree = "<group>"; };
 		7ED25FA3004DFAF50E472247 /* Pods_spotifytest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotifytest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DF9AB1D77E12000A7C43F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		ACB69A991D826DA100F9D575 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACEC39AF1D7E787A002D9EB7 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +230,7 @@
 				3F5D46F31D1AE61700BF694A /* Assets.xcassets */,
 				3F5D46F51D1AE61700BF694A /* LaunchScreen.storyboard */,
 				3F5D46F81D1AE61700BF694A /* Info.plist */,
+				ACB69A991D826DA100F9D575 /* GoogleService-Info.plist */,
 			);
 			path = spotifytest;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				3F6261601D2422B1003F8F5A /* Favs.storyboard in Resources */,
 				3F1BFDAF1D232B7B001FAC07 /* Main.storyboard in Resources */,
 				3F5E887F1D25811400DCFE96 /* Muli-Light.ttf in Resources */,
+				ACB69A9A1D826DA100F9D575 /* GoogleService-Info.plist in Resources */,
 				AC9DF9AC1D77E12000A7C43F /* OpenSans-Light.ttf in Resources */,
 				3F62616D1D2441E3003F8F5A /* Card.xib in Resources */,
 			);
